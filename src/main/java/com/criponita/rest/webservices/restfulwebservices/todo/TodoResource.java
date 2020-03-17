@@ -20,7 +20,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.criponita.rest.webservices.restfulwebservices.todo.Todo;
 
 @RestController
-@CrossOrigin(origins="http://localhost:3000,https://react.criponita.com,https://srv172.prodns.com.br")
+@CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})
 public class TodoResource {
 	
 	@Autowired
