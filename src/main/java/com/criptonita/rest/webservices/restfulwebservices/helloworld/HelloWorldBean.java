@@ -1,4 +1,4 @@
-package com.criponita.rest.webservices.restfulwebservices.helloworld;
+package com.criptonita.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
 

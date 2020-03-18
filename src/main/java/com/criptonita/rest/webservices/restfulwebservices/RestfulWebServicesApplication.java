@@ -1,4 +1,4 @@
-package com.criponita.rest.webservices.restfulwebservices;
+package com.criptonita.rest.webservices.restfulwebservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

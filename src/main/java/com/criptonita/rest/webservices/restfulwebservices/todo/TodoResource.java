@@ -1,4 +1,4 @@
-package com.criponita.rest.webservices.restfulwebservices.todo;
+package com.criptonita.rest.webservices.restfulwebservices.todo;
 
 import java.net.URI;
 import java.util.List;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.criponita.rest.webservices.restfulwebservices.todo.Todo;
+import com.criptonita.rest.webservices.restfulwebservices.todo.Todo;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})

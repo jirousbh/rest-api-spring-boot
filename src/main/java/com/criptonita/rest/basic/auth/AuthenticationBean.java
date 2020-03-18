@@ -1,4 +1,4 @@
-package com.criponita.rest.webservices.restfulwebservices.basic.auth;
+package com.criptonita.rest.basic.auth;
 
 public class AuthenticationBean {
 
