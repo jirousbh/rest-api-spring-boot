@@ -2,7 +2,7 @@
 
 ## Resumo
 
-Endpoints REST API em Spring Boot com autenticação JWT. Foi utilizado um banco de dados in-memory para teste dos dados.
+Endpoints REST API em Spring Boot com autenticação JWT. Foi utilizado um banco de dados in-memory para teste dos dados. O Intuito desse projeto foi entender os conceitos de spring boot e como aplicar um CRUD básico usando alguma camada de segurança na aplicação.
 
 ## Tecnologias
 
@@ -33,10 +33,11 @@ Json:{
 }
 </pre>
 
-### [GET] /jpa/users/${username}/todos 
+
+### [GET] /jpa/users/${username}/todos --Lista completa
 
 #### Entrada JWT (Header)
-Authorization Beares ${JWT_TOKEN}
+Authorization Bearer ${JWT_TOKEN}
 
 #### Saída
 <pre>
@@ -51,6 +52,61 @@ Json:
 </pre>
 
 
+### [GET] /jpa/users/${username}/todos/${id} --Lista somente um item da lista
 
-#### Observações
-Obrigado pela oportunidade do desafio. Infelizmente não tive como completá-lo em 48 horas. Mas foi uma boa oportunidade para aprender um framework novo (Laravel) e ainda iniciar sobre as técnicas de web scrapping.
+#### Entrada JWT (Header)
+Authorization Bearer ${JWT_TOKEN}
+
+#### Saída
+<pre>
+Json:
+ {
+"id": ...,
+"username": "...",
+"description": "...",
+"targetDate": "...",
+"isDone": ('true|false')
+},
+</pre>
+
+
+### [POST] /jpa/users/${username}/todos/ --Insere um novo item na lista
+
+#### Entrada JWT (Header)
+Authorization Bearer ${JWT_TOKEN}
+
+#### Entrada JSON (body)
+<pre>
+Json:
+ {
+"username": "...",
+"description": "...",
+"targetDate": "...",
+"isDone": ('true|false')
+},
+</pre>
+
+
+### [PUT] /jpa/users/${username}/todos/${id} --Altera um item da lista
+
+#### Entrada JWT (Header)
+Authorization Bearer ${JWT_TOKEN}
+
+#### Entrada JSON (body)
+<pre>
+Json:
+ {
+"id": ..., 
+"username": "...",
+"description": "...",
+"targetDate": "...",
+"isDone": ('true|false')
+},
+</pre>
+
+
+### [DELETE] /jpa/users/${username}/todos/${id} --Apaga um item da lista
+
+#### Entrada JWT (Header)
+Authorization Bearer ${JWT_TOKEN}
+
