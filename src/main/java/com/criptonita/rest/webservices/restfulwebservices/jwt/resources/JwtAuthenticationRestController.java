@@ -25,7 +25,8 @@ import com.criptonita.rest.webservices.restfulwebservices.jwt.JwtTokenUtil;
 import com.criptonita.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})
+//@CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})
+@CrossOrigin(origins = {"*"})
 public class JwtAuthenticationRestController {
 
   @Value("${jwt.http.request.header}")

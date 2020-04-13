@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 //Controller
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})
+//@CrossOrigin(origins = {"http://localhost:3000", "https://react.criptonita.info"})
+@CrossOrigin(origins = {"*"})
 public class HelloWordController {
 	//GET
 	//URI - /hello-word

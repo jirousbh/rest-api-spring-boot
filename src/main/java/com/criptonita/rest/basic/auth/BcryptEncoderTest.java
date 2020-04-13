@@ -8,7 +8,7 @@ public class BcryptEncoderTest {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
 		for (int i=1; i<=10;i++) {
-			String encodedString = encoder.encode("asdfg");
+			String encodedString = encoder.encode("Teste@2020");
 			System.out.println(encodedString);
 		}
 	}
